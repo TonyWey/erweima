@@ -30,24 +30,24 @@ public class CreateQrCode {
 //		}
 		String content = "BEGIN:VCARD"+"\n"
 				+ "VERSION:2.1"+"\n"
-				+ "FN:Íõµ¤"+"\n"
-				+ "NICKNAME:ºÚµ¤"+"\n"
-				+ "ORG:¹âÉ½ÏØµÚ¶ş¸ß¼¶ÖĞÑ§"+"\n"
-				+ "TITLE:¸ßÖĞÉú"+"\n"
+				+ "FN:æé€µ"+"\n"
+				+ "NICKNAME:é»‘æ—‹é£"+"\n"
+				+ "ORG:å…‰å±±å¿ç¬¬äºŒé«˜çº§ä¸­å­¦"+"\n"
+				+ "TITLE:é«˜ä¸­ç”Ÿ"+"\n"
 				+ "TEL;HOME;VOICE:13569739272"+"\n"
-				+ "ADR;WORK:;ĞÅÑôÊĞ¹âÉ½ÏØ"+"\n"
-				+ "ADR;HOME:;;ĞÅÑôÊĞ¹âÉ½ÏØ"+"\n"
+				+ "ADR;WORK:;ä¿¡é˜³å¸‚å…‰å±±å¿"+"\n"
+				+ "ADR;HOME:;;ä¿¡é˜³å¸‚å…‰å±±å¿"+"\n"
 				+ "X-QQ:1779224164"+"\n"
 				+ "END:VCARD";
 		//String content = "http://www.imooc.com";
 		try {
 			//;POSTAL;PARCEL
-			//½â¾öÖĞÎÄÂÒÂëÎÊÌâ
+			//è§£å†³ä¸­æ–‡ä¹±ç é—®é¢˜
 			content = new String(content.getBytes("utf-8"),"ISO-8859-1");
 		} catch (UnsupportedEncodingException e1) {
 			e1.printStackTrace();
 		}
-		//½«ÒªÕ¹Ê¾µÄ¶şÎ¬ÂëÄÚÈİÉèÖÃÔÚ¼¯ºÏÖĞ
+		//å°†è¦å±•ç¤ºçš„äºŒç»´ç å†…å®¹è®¾ç½®åœ¨é›†åˆä¸­
 		HashMap hash = new HashMap();
 		hash.put(EncodeHintType.CHARACTER_SET, "ISO-8859-1");
 		hash.put(EncodeHintType.ERROR_CORRECTION,ErrorCorrectionLevel.M);
